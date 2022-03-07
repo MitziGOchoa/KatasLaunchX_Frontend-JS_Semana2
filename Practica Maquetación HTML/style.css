@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;   
+    box-sizing: border-box;
+}
+
+.header{
+    background-image: url(Ingredientes_pan.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav img
+{
+    width: 150px;
+}
+
+body{
+    
+    background-size: cover;
+    background-position: auto;
+    font-family: sans-serif;
+}
+
+.logo
+{
+    top: 1%;
+    left: 1%;
+    opacity: 0.9;
+}
+
+.imgRedonda {
+    border-radius:4%;
+}
+
+.title
+{
+    font-size: 40px;
+    color: bisque;
+    font-family: 'Great Vibes', cursive;
+}
+
+.menu
+{
+    background: rgb(26, 6, 6);
+    flex: 1;
+    text-align:center;
+}
+
+.menu ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: rgb(248, 246, 244);
+}
+
+.menu ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.menu ul li a
+{
+    text-decoration: none;
+    color: rgb(248, 246, 244);
+    font-size: 15px;
+
+}
+
+.active, .menu ul li:hover
+{
+    background:rgb(37, 9, 9);
+    border-radius: 3px;
+}
+
+.menu .fa
+{
+    align-items: center;
+    color: #f0f8ff;
+}
+
+.desplegable
+{
+    font-size: medium;
+}
+
+.sub-menu 
+{
+    display: none;
+}
+
+.menu ul li:hover .sub-menu
+{
+    display: block;
+    position: absolute;
+    background: rgb(44, 12, 12);
+}
+
+.menu ul li:hover .sub-menu ul
+{
+    display: block;
+}
+
+.menu ul li:hover .sub-menu ul li
+{
+    width: 150px;
+    padding: 8px 12px;
+    position: relative;
+    border-bottom: 2px dashed rgb(39, 21, 21);
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu ul li:hover .sub-menu ul li:last-child
+{
+    border-bottom: none;
+}
+
+.active, .menu ul li:hover .sub-menu ul li:hover
+{
+    background: rgb(39, 21, 21);
+    border-radius: 0;
+}
+
+.destacado
+{
+    display: flex;
+    float: center;    
+    justify-content: right;
+    margin-top: 0px;
+    margin-right: 50px;
+
+}
+
+.frase
+{
+    font-size: 18px;
+    color: rgb(252, 252, 252);
+    text-align: right;
+    font-family: sans-serif;
+    justify-content: top;
+    margin-right: 50px;
+}
